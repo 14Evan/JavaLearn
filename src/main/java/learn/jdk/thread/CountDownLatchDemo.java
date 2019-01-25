@@ -1,4 +1,4 @@
-package learn.jdk;
+package learn.jdk.thread;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -17,7 +17,7 @@ public class CountDownLatchDemo {
         new Thread(new Thre()).start();
 
         try {
-            downLatch.await();
+            downLatch.await(); // 只有当减少5次后，才会跳过该阻塞语句
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
