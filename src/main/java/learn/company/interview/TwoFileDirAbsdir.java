@@ -3,6 +3,7 @@ package learn.company.interview;
 public class TwoFileDirAbsdir {
 
     public static void main(String[] args) {
+
         System.out.println(absPath("/hel/a/b/c/d/file.c", "/hel/a/b/c/d/e/fileddd.c"));
     }
 
