@@ -15,5 +15,9 @@ public class LoadDemo {
         * */
         Child child = new Child();
         child.childtest();
+
+//        System.out.println(Child.chichar);
+//
+//        Child.staticMethodInChild();
     }
 }
