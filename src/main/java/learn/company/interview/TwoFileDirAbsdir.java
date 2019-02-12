@@ -37,7 +37,7 @@ public class TwoFileDirAbsdir {
                 a = fileaArr[i];
             } catch (ArrayIndexOutOfBoundsException e) {
                 for (int ii = i; ii < maxLength; ii++) {
-                    stringbuilder.append(filebArr[ii]);
+                    stringbuilder.append(filebArr[ii]).append("/");
                 }
                 break;
             }
