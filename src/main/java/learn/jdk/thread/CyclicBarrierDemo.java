@@ -2,6 +2,18 @@ package learn.jdk.thread;
 
 import java.util.concurrent.*;
 
+/**
+ * CyclicBarrier 字面意思理解
+ * Cyclic 周期性
+ * Barrier，障碍物；屏障
+ * 周期性的障碍物
+ * 因为有CyclicBarrier.reset(); 可以重置，所以是周期性的
+ *
+ * new CyclicBarrier 的2个参数
+ * parm1： the number of threads that must invoke {@link #await} before the barrier is tripped
+ * parm2： arrierAction the command to execute when the barrier is tripped, or {@code null} if there is no action
+ *
+ */
 public class CyclicBarrierDemo implements Runnable {
 
     private static CyclicBarrier barrier = new CyclicBarrier(3, new CyclicBarrierDemo());
